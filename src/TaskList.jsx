@@ -1,14 +1,5 @@
-import { useEffect, useState } from 'react'
-import { tasks as data } from './tasks'
 
-
-export default function TaskList() {
-
-    const [tasks, setTasks] = useState([])
-
-    useEffect(() => {
-        setTasks(data)
-    }, [])
+export default function TaskList({ tasks }) {
 
     return (
         <div>
